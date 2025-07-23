@@ -13,8 +13,8 @@ func mockImageStream() {
 	rand.Seed(time.Now().UnixNano())
 
 	for {
-		// 模拟生成一张 800x600 的随机彩色图像
-		img := image.NewRGBA(image.Rect(0, 0, 800, 600))
+		// 模拟生成一张 960x540 的随机彩色图像
+		img := image.NewRGBA(image.Rect(0, 0, 960, 540))
 		fillRandomColor(img)
 
 		eImg := ebiten.NewImageFromImage(img)
